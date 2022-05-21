@@ -1,0 +1,16 @@
+extend layout 
+
+block content
+    h1 #{title}
+    table
+        thead 
+            tr
+                th ID 
+                th Heading 
+                th Desctiption 
+        tbody 
+            each blog, i in blogs
+                tr
+                    td= blog.id
+                    td= blog.heading
+                    td= blog.description
